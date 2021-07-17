@@ -27,6 +27,7 @@ Note!! We are using the English alphabet for this problem - that is, the followi
 
 >>> import string
 >>> print string.ascii_lowercase
+ 
 abcdefghijklmnopqrstuvwxyz
 We will treat uppercase and lowercase letters individually, so that uppercase letters are always mapped to an uppercase letter, and lowercase letters are always mapped to a lowercase letter. If an uppercase letter maps to "A", then the same lowercase letter should map to "a". Punctuation and spaces should be retained and not changed. For example, a plaintext message with a comma should have a corresponding ciphertext with a comma in the same position.
 
@@ -37,11 +38,3 @@ We will treat uppercase and lowercase letters individually, so that uppercase le
 | ''              | any value |  ''              |
 We implemented for you two helper functions: load_words and is_word. You may use these in your solution and you do not need to understand them completely, but should read the associated comments. You should read and understand the helper code in the rest of the file and use it to guide your solutions.
 
-Getting Started
-
-To get started, download the ps6.zip file. Extract it to your working directory. The files inside are:
-
-ps6.py - a file containing three classes that you will have to implement.
-words.txt - a file containing valid English words (should be in the same folder as your ps6..py file).
-story.txt - a file containing an encrypted message that you will have to decode (should be in the same folder as your ps6..py file).
-This will be your first experience coding with classes! We will have a Message class with two subclasses PlaintextMessage and CiphertextMessage .
