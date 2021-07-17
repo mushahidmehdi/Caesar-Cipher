@@ -25,9 +25,9 @@ Using the above key, we can quickly translate the message "happy" to "kdssb" (no
 
 Note!! We are using the English alphabet for this problem - that is, the following letters in the following order:
 
->>> import string
+> import string
 
->>> print string.ascii_lowercase
+> print string.ascii_lowercase
  
 abcdefghijklmnopqrstuvwxyz
 We will treat uppercase and lowercase letters individually, so that uppercase letters are always mapped to an uppercase letter, and lowercase letters are always mapped to a lowercase letter. If an uppercase letter maps to "A", then the same lowercase letter should map to "a". Punctuation and spaces should be retained and not changed. For example, a plaintext message with a comma should have a corresponding ciphertext with a comma in the same position.
