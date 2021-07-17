@@ -26,6 +26,7 @@ Using the above key, we can quickly translate the message "happy" to "kdssb" (no
 Note!! We are using the English alphabet for this problem - that is, the following letters in the following order:
 
 >>> import string
+
 >>> print string.ascii_lowercase
  
 abcdefghijklmnopqrstuvwxyz
