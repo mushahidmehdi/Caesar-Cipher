@@ -2,6 +2,7 @@
 
 Encryption is the process of obscuring information to make it unreadable without special knowledge. For centuries, people have devised schemes to encrypt messages - some better than others - but the advent of the computer and the Internet revolutionized the field. These days, it's hard not to encounter some sort of encryption, whether you are buying something online or logging into a shared computer system. Encryption lets you share information with other trusted people, without fear of disclosure.
 
+## Cipher
 A cipher is an algorithm for performing encryption (and the reverse, decryption). The original information is called plaintext. After it is encrypted, it is called ciphertext. The ciphertext message contains all the information of the plaintext message, but it is not in a format readable by a human or computer without the proper mechanism to decrypt it; it should resemble random gibberish to those for whom it is not intended.
 
 A cipher usually depends on a piece of auxiliary information, called a key. The key is incorporated into the encryption process; the same plaintext encrypted with two different keys should have two different ciphertexts. Without the key, it should be difficult to decrypt the resulting ciphertext into readable plaintext.
@@ -14,9 +15,9 @@ This assignment will deal with a well-known (though not very secure) encryption 
 - Plaintext - the original message
 - Ciphertext - the encrypted message. Note: a ciphertext still contains all of the original message information, even if it looks like gibberish.
 
-## Undertanding Caesar Cipher
+### Undertanding Caesar Cipher
 
-The idea of the Caesar Cipher is to pick an integer and shift every letter of your message by that integer. In other words, suppose the shift is k . Then, all instances of the i-th letter of the alphabet that appear in the plaintext should become the (i+k)-th letter of the alphabet in the ciphertext. You will need to be careful with the case in which i + k > 26 (the length of the alphabet). Here is what the whole alphabet looks like shifted three spots to the right:
+The idea of the Caesar Cipher is to pick an integer and shift every letter of your message by that integer. In other words, suppose the shift is` k `. Then, all instances of the i-th letter of the alphabet that appear in the plaintext should become the `(i+k)-th `letter of the alphabet in the ciphertext. You will need to be careful with the case in which` i + k > 26 `(the length of the alphabet). Here is what the whole alphabet looks like shifted three spots to the right:
 
 
 `Original:`    `a b c d e f g h i j k l m n o p q r s t u v w x y z`                                                                                            
@@ -36,5 +37,7 @@ We will treat uppercase and lowercase letters individually, so that uppercase le
 | `'abcdef'`        |  `  2 `     | ` 'cdefgh'`        |
 |` 'Hello, World!'` | `   5  `    | ` 'Mjqqt, Btwqi!' `|
 | `''`              | `any value` |  `''  `            |
-We implemented for you two helper functions: load_words and is_word. You may use these in your solution and you do not need to understand them completely, but should read the associated comments. You should read and understand the helper code in the rest of the file and use it to guide your solutions.
+
+
+We implemented for you two helper functions: `load_words `and `is_word.` You may use these in your solution and you do not need to understand them completely, but should read the associated comments. You should read and understand the helper code in the rest of the file and use it to guide your solutions.
 
